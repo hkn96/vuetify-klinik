@@ -104,7 +104,7 @@ export default {
           'Lorem ipsum carrots enhanced rebates. Most flexibl Lorem ipsum carrots enhanced rebates. Most flexibl Lorem ipsum carrots enhanced rebates. Most flexibl',
         sub: 'Web Entwickler',
         title: 'Hakan Ünlü',
-        src: require('../assets/team/t.png'),
+        src: require('../assets/team/profil2.jpg'),
       },
       {
         icon: 'mdi-github',
