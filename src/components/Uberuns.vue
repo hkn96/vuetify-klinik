@@ -1,4 +1,4 @@
-<template lang="">
+<template >
   <v-container class="grey lighten-5">
     <v-row>
       <v-col cols="12" md="12">
@@ -22,7 +22,7 @@
           width="100%"
           class="grey lighten-4 text-start"
         >
-          <v-img width="100%" height="300" :src="card"> </v-img>
+          <v-img class="zoom" width="100%" height="300" :src="card"> </v-img>
           <v-col cols="auto">
             <v-dialog transition="dialog-bottom-transition" max-width="600">
               <template v-slot:activator="{ on, attrs }">
@@ -75,7 +75,16 @@
     </v-row>
   </v-container>
 </template>
-<style lang=""></style>
+<style scoped>
+.zoom {
+  transition: transform 1s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.zoom:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+</style>
 <script>
 export default {
   data: () => ({
