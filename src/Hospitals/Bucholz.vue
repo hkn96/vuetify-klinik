@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <v-container>
     <v-row>
       <!-- Klinikbewertungen carousel -->
@@ -24,7 +24,7 @@
               :key="i"
               :src="slide.src"
             >
-              <strong absolute class="my-1">
+              <strong class="my-1">
                 {{ slide.name }}
               </strong>
             </v-carousel-item>

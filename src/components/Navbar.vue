@@ -23,7 +23,7 @@
           text
           small
           color="black"
-          class="my-5  white--text d-none d-sm-flex"
+          class="my-5 mr-2  white--text d-none d-sm-flex"
           router
           to="/"
         >
@@ -36,7 +36,7 @@
           text
           small
           color="black"
-          class="my-5  white--text"
+          class="my-5 mr-2  white--text  d-none d-sm-flex "
           router
           to="/Cards"
         >
@@ -47,7 +47,7 @@
           elevation="1"
           small
           color="error"
-          class="my-5  white--text"
+          class="my-5 mr-2   white--text "
           href="https://fahricigdem.github.io/klinikbewertungen-react/"
           >Experten</v-btn
         >
@@ -113,6 +113,11 @@ export default {
           icon: 'mdi-forum',
           text: 'Über Uns',
           route: '/Uberuns',
+        },
+        {
+          icon: 'mdi-hospital-building',
+          text: 'Kliniken',
+          route: '/Cards',
         },
       ],
     };
